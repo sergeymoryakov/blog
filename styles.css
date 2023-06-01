@@ -20,3 +20,29 @@ body {
     color: var(--clr-font);
     background-color: var(--clr-gray);
 }
+
+input,
+button {
+    width: 100%;
+    font-family: inherit;
+    cursor: pointer;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 50px;
+    max-width: 800px;
+    color: var(--clr-font);
+    background-color: var(--clr-back);
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.column {
+    width: calc((100% - 20px) / 2);
+    border: 1px solid red;
+}
