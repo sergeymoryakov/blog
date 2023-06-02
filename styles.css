@@ -44,5 +44,5 @@ button {
 
 .column {
     width: calc((100% - 20px) / 2);
-    border: 1px solid red;
+    border: 1px dashed red;
 }
