@@ -16,9 +16,12 @@
         <div class="wrapper">
             <div class="column">
                 <h2>New Article</h2>
-                <input id="titleInput" class="title-input" type="text">
-                <input id="bodyInput" class="body-input" type="text">
-                <input id="sourceInput" class="source-input" type="text">
+                <input id="titleInput" class="title-input" type="text" maxlength="100">
+                <span id="titleCounter"></span>
+                <input id="bodyInput" class="body-input" type="text" maxlength="500">
+                <span id="bodyCounter"></span>
+                <input id="sourceInput" class="source-input" type="text" maxlength="100">
+                <span id="sourceCounter"></span>
                 <button id="postBtn" class="post-btn">Post</button>
             </div>
             
@@ -26,7 +29,7 @@
                 <h2>News</h2>
 
                 <div id="articles">
-                    <p id="postTitle">Empty...</p>
+                    <p>No recent articles posted</p>
                 </div>
             </div>
         </div>

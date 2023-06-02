@@ -26,6 +26,7 @@ button {
     width: 100%;
     font-family: inherit;
     cursor: pointer;
+    box-sizing: border-box;
 }
 
 .container {
@@ -45,4 +46,10 @@ button {
 .column {
     width: calc((100% - 20px) / 2);
     border: 1px dashed red;
+}
+
+.counter {
+    color: var(--clr-gray);
+    font-size: 0.8em;
+    margin-top: 5px;
 }
