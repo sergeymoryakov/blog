@@ -1,11 +1,27 @@
-const articles = [];
+// const articles = [];
 
-// {
-//     title: '',
-//     body: '',
-//     date: '',
-//     source: ''
-// }
+// For playground simply use a Fake-News list below.
+// Clear for production.
+const articles = [
+    {
+        title: 'Fake Article Title One',
+        body: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis tempora cum dolores dicta praesentium blanditiis. Rem, ea. Fuga a consectetur aspernatur. Minus deleniti laboriosam voluptates aliquam illo voluptatibus facilis est?',
+        date: new Date(2019, 3, 24, 10, 33, 30),
+        source: 'Pekka L.'
+    },
+    {
+        title: 'Fake Article Title Two',
+        body: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis tempora cum dolores dicta praesentium blanditiis. Rem, ea. Fuga a consectetur aspernatur. Minus deleniti laboriosam voluptates aliquam illo voluptatibus facilis est?',
+        date: new Date(2020, 12, 4, 19, 06, 07),
+        source: 'Anni S.'
+    },
+    {
+        title: 'Fake Article Title Three',
+        body: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis tempora cum dolores dicta praesentium blanditiis. Rem, ea. Fuga a consectetur aspernatur. Minus deleniti laboriosam voluptates aliquam illo voluptatibus facilis est?',
+        date: new Date(2022, 5, 15, 1, 53, 55),
+        source: 'Seppo M.'
+    }
+];
 
 const titleInputNode = document.getElementById('titleInput');
 const titleCounterNode = document.getElementById('titleCounter');
@@ -15,6 +31,8 @@ const sourceInputNode = document.getElementById('sourceInput');
 const sourceCounterNode = document.getElementById('sourceCounter');
 const postBtnNode = document.getElementById('postBtn');
 const articlesNode = document.getElementById('articles');
+
+renderArticles();
 
 // Event listeners for title and body text counting
 titleInputNode.addEventListener('input', updateTitleCounter);
@@ -63,6 +81,9 @@ function getArticleFromUser() {
     const date = new Date();
     const source = sourceInputNode.value;
 
+    // for TBS only - remove in production
+    console.log(date);
+
     return {
         title: title,
         body: body,
@@ -97,7 +118,7 @@ function renderArticles() {
                 <p class='article-title'>${article.title}</p>
                 <p class='article-date'>${article.date.toUTCString()}</p>
                 <p class='article-body'>${article.body}</p>
-                <p class='article-source'>${article.source}</p>
+                <p class='article-source'>Source: ${article.source}</p>
             </div>
             <hr class='article-divider'>
         `;

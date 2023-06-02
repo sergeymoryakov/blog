@@ -11,20 +11,35 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <h1>News Application</h1>
         <div class="wrapper">
             <div class="column">
                 <h2>New Article</h2>
-                <input id="titleInput" class="title-input" 
-                    type="text" placeholder="Article Title" maxlength="100">
-                <span id="titleCounter"></span>
-                <input id="bodyInput" class="body-input" 
-                    type="text" placeholder="Article body text" maxlength="500">
-                <span id="bodyCounter"></span>
-                <input id="sourceInput" class="source-input" 
-                    type="text" placeholder="Author's Name or Link to the Source" maxlength="100">
-                <span id="sourceCounter"></span>
+                <textarea id="titleInput" class="title-input" 
+                    type="text" placeholder="Type title here" 
+                    maxlength="100" rows="2">
+                </textarea>
+                <!-- <input id="titleInput" class="title-input" 
+                    type="text" placeholder="Article Title" 
+                    maxlength="100"> -->
+                <span id="titleCounter" class="counter"></span>
+                
+                <textarea id="bodyInput" class="body-input" 
+                    type="text" placeholder="Type text here" 
+                    maxlength="500" rows="10">
+                </textarea>
+                <!-- <input id="bodyInput" class="body-input" 
+                    type="text" placeholder="Article body text" 
+                    maxlength="500"> -->
+                <span id="bodyCounter" class="counter"></span>
+                
+                <textarea id="sourceInput" class="source-input" 
+                    type="text" placeholder="Type author's name or source link here" 
+                    maxlength="100" rows="1">
+                </textarea>
+                <!-- <input id="sourceInput" class="source-input" 
+                    type="text" placeholder="Author's Name or Link to Source" 
+                    maxlength="100"> -->
+                <span id="sourceCounter" class="counter"></span>
                 <button id="postBtn" class="post-btn">Post</button>
             </div>
             
@@ -36,7 +51,6 @@
                 </div>
             </div>
         </div>
-    </div>
     <script src="blog.js"></script>
 </body>
 </html>
