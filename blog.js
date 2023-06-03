@@ -23,6 +23,10 @@ const articles = [
     }
 ];
 
+const LIMIT_TITLE = 120;
+const LIMIT_BODY = 1200;
+const LIMIT_SOURCE = 120;
+
 const titleInputNode = document.getElementById('titleInput');
 const titleCounterNode = document.getElementById('titleCounter');
 const bodyInputNode = document.getElementById('bodyInput');
@@ -44,9 +48,17 @@ postBtnNode.addEventListener('click', function () {
     const articleFromUser = getArticleFromUser();
 
     if (!articleFromUser.title || !articleFromUser.body || !articleFromUser.source) {
-        alert('Please enter all required firlds');
+        alert('Please enter all required fields');
         return;
-    }
+    } 
+    
+    if (articleFromUser.title.length > LIMIT_TITLE
+        || articleFromUser.body.length > LIMIT_BODY
+        || articleFromUser.source.length > LIMIT_SOURCE) 
+    {
+        alert('Please do not exceed length of input fields');
+        return;
+    } 
 
     // Save text
     addArticle(articleFromUser);
@@ -58,20 +70,25 @@ postBtnNode.addEventListener('click', function () {
     titleInputNode.value = '';
     bodyInputNode.value = '';
     sourceInputNode.value = '';
+
+    // Clear counter
+    updateTitleCounter();
+    updateBodyCounter();
+    updateSourceCounter();
 });
 
 function updateTitleCounter() {
-    const remainingChars = 100 - titleInputNode.value.length;
+    const remainingChars = LIMIT_TITLE - titleInputNode.value.length;
     titleCounterNode.textContent = `${remainingChars} characters remaining`;
 }
 
 function updateBodyCounter() {
-    const remainingChars = 500 - bodyInputNode.value.length;
+    const remainingChars = LIMIT_BODY - bodyInputNode.value.length;
     bodyCounterNode.textContent = `${remainingChars} characters remaining`;
 }
 
 function updateSourceCounter() {
-    const remainingChars = 100 - sourceInputNode.value.length;
+    const remainingChars = LIMIT_SOURCE - sourceInputNode.value.length;
     sourceCounterNode.textContent = `${remainingChars} characters remaining`;
 }
 
@@ -116,8 +133,8 @@ function renderArticles() {
         articlesHTML += `
         <hr class='article-divider'>
         <div class='article'>
-            <p class='article-title'>${article.title}</p>
             <p class='article-date'>${article.date.toUTCString()}</p>
+            <p class='article-title'>${article.title}</p>
             <p class='article-body'>${article.body}</p>
             <p class='article-source'>Source: ${article.source}</p>
         </div>

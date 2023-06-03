@@ -83,8 +83,15 @@ button {
 }
 
 .article-divider {
-    margin-top: 0;
-    margin-bottom: 5px;
+    margin: 0;
+    color: var(--clr-gray);
+}
+
+.article-date {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 0.85em;
+    line-height: 0.85em;
 }
 
 .article-title {
@@ -94,19 +101,13 @@ button {
     font-weight: 700;
 }
 
-.article-date {
-    margin-bottom: 10px;
-    font-size: 0.85em;
-    line-height: 0.85em;
-}
-
 .article-body {
     margin-bottom: 5px;
     line-height: 1.25em;
 }
 
 .article-source {
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     font-size: 0.85em;
     font-style: italic;
 }
