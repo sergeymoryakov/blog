@@ -114,13 +114,13 @@ function renderArticles() {
     for (let i = articles.length - 1; i >= 0; i--) {
         const article = articles[i];
         articlesHTML += `
-            <div class='article'>
-                <p class='article-title'>${article.title}</p>
-                <p class='article-date'>${article.date.toUTCString()}</p>
-                <p class='article-body'>${article.body}</p>
-                <p class='article-source'>Source: ${article.source}</p>
-            </div>
-            <hr class='article-divider'>
+        <hr class='article-divider'>
+        <div class='article'>
+            <p class='article-title'>${article.title}</p>
+            <p class='article-date'>${article.date.toUTCString()}</p>
+            <p class='article-body'>${article.body}</p>
+            <p class='article-source'>Source: ${article.source}</p>
+        </div>
         `;
     };
 
