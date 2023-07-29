@@ -15,6 +15,7 @@ const sourceCounterNode = document.getElementById("sourceCounter");
 const postBtnNode = document.getElementById("postBtn");
 const articlesNode = document.getElementById("articles");
 
+// adding fake news sorting:
 articles.sort((a, b) => a.date - b.date);
 renderArticles();
 
@@ -113,12 +114,38 @@ function renderArticles() {
     let articlesHTML = "";
     const day = 1000 * 60 * 60 * 24;
     const hour = 1000 * 60 * 60;
-    console.log(day);
-    console.log(hour);
+    const minute = 1000 * 60;
 
     for (let i = articles.length - 1; i >= 0; i--) {
         const article = articles[i];
-        console.log(parseInt((new Date() - article.date) / day));
+
+        const elapsedTimeInMilliseconds = new Date() - article.date;
+
+        if (elapsedTimeInMilliseconds < minute) {
+            // Less than 1 minute (60,000 milliseconds)
+            const elapsedTime = Math.floor(elapsedTimeInMilliseconds / 1000);
+            const elapsed = `Posted ${elapsedTime} seconds ago`;
+            console.log(elapsed);
+        } else if (elapsedTimeInMilliseconds < hour) {
+            // Less than 1 hour (3,600,000 milliseconds)
+            const elapsedMinutes = Math.floor(
+                elapsedTimeInMilliseconds / 60000
+            );
+            console.log(`Posted ${elapsedMinutes} minutes ago`);
+        } else if (elapsedTimeInMilliseconds < day) {
+            // Less than 1 day (86,400,000 milliseconds)
+            const elapsedHours = Math.floor(
+                elapsedTimeInMilliseconds / 3600000
+            );
+            console.log(`Posted ${elapsedHours} hours ago`);
+        } else {
+            // More than 1 day
+            const elapsedDays = Math.floor(
+                elapsedTimeInMilliseconds / 86400000
+            );
+            console.log(`Posted ${elapsedDays} days ago`);
+        }
+
         articlesHTML += `
         <hr class='article-divider'>
         <div class='article'>
@@ -128,7 +155,6 @@ function renderArticles() {
         <p class='article-source'>Source: ${article.source}</p>
         </div>
         `;
-        console.log(parseInt((new Date() - article.date) / day));
     }
 
     articlesNode.innerHTML = articlesHTML;

@@ -2,19 +2,19 @@ export const articles = [
     {
         title: "Self-Driving Car Picks Up Hitchhiking Robot, They Embark on Cross-Country Adventure",
         body: 'In a heartwarming and unexpected turn of events, a self-driving car picked up a hitchhiking robot at a gas station. The two unlikely companions struck up an AI-powered friendship and decided to embark on a cross-country road trip together. As they traveled across states, the duo captured the attention of social media users, who eagerly followed their adventure. The car and the robot plan to document their journey in a book titled "Highway of Friendship: An Autonomous Tale."',
-        date: new Date(2023, 6, 2, 12, 15, 22),
+        date: new Date(2023, 6, 29, 12, 15, 22),
         source: "Maria H.",
     },
     {
         title: "Gamers Discover Secret Minigame in Government Website, Compete for High Scores",
         body: 'A group of curious gamers stumbled upon a hidden minigame buried in a government website while attempting to access public records. The unexpected discovery turned the mundane website into a competitive gaming arena, with players racing to achieve high scores and unlock special achievements. Government officials were both surprised and amused by the newfound interest in their site and have decided to keep the minigame as a "digital Easter egg" for citizens to enjoy.',
-        date: new Date(2023, 5, 18, 9, 42, 51),
+        date: new Date(2023, 6, 28, 9, 42, 51),
         source: "Oliver P.",
     },
     {
         title: "Robot Band Performs Mind-Blowing Concert, Sparks Debate Over Artificial Creativity",
         body: "An all-robot band, equipped with state-of-the-art musical instruments and AI, held a mesmerizing concert that left the audience in awe. Their flawless performance and improvisational skills sparked a heated debate about artificial creativity and the nature of music. Supporters argue that robots can experience genuine emotions through advanced algorithms, while skeptics believe that true creativity is exclusive to humans. The debate has reignited discussions about the future of AI-generated art and its impact on human culture.",
-        date: new Date(2023, 2, 9, 20, 10, 5),
+        date: new Date(2023, 6, 25, 20, 10, 5),
         source: "Emma R.",
     },
     {
