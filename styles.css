@@ -9,7 +9,7 @@
 }
 
 body {
-    font-family: 'Inter', sans-serif;
+    font-family: "Inter", sans-serif;
     font-size: 1em;
     line-height: 1em;
     color: var(--clr-font);
@@ -42,7 +42,7 @@ button {
     flex-wrap: wrap;
     flex-direction: row;
     /* Use gap to calculate .column width */
-    gap: 0px; 
+    gap: 0px;
     color: var(--clr-font);
     background-color: var(--clr-back);
 }
@@ -91,7 +91,9 @@ button {
     margin-top: 10px;
     margin-bottom: 10px;
     font-size: 0.85em;
+    font-style: italic;
     line-height: 0.85em;
+    color: #007bff;
 }
 
 .article-title {

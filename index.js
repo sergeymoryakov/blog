@@ -110,7 +110,7 @@ function getArticles() {
 
 function renderArticles() {
     const articles = getArticles();
-
+    let elapsedTimeLine = "";
     let articlesHTML = "";
     const day = 1000 * 60 * 60 * 24;
     const hour = 1000 * 60 * 60;
@@ -121,35 +121,27 @@ function renderArticles() {
 
         const elapsedTimeInMilliseconds = new Date() - article.date;
 
-        if (elapsedTimeInMilliseconds < minute) {
-            // Less than 1 minute (60,000 milliseconds)
-            const elapsedTime = Math.floor(elapsedTimeInMilliseconds / 1000);
-            const elapsed = `Posted ${elapsedTime} seconds ago`;
-            console.log(elapsed);
-        } else if (elapsedTimeInMilliseconds < hour) {
+        if (elapsedTimeInMilliseconds < hour) {
             // Less than 1 hour (3,600,000 milliseconds)
-            const elapsedMinutes = Math.floor(
-                elapsedTimeInMilliseconds / 60000
-            );
-            console.log(`Posted ${elapsedMinutes} minutes ago`);
+            const elapsedTime = Math.floor(elapsedTimeInMilliseconds / minute);
+            elapsedTimeLine = `Posted ${elapsedTime} minutes ago`;
+            console.log(elapsedTimeLine);
         } else if (elapsedTimeInMilliseconds < day) {
             // Less than 1 day (86,400,000 milliseconds)
-            const elapsedHours = Math.floor(
-                elapsedTimeInMilliseconds / 3600000
-            );
-            console.log(`Posted ${elapsedHours} hours ago`);
+            const elapsedTime = Math.floor(elapsedTimeInMilliseconds / hour);
+            elapsedTimeLine = `Posted ${elapsedTime} hours ago`;
+            console.log(elapsedTimeLine);
         } else {
             // More than 1 day
-            const elapsedDays = Math.floor(
-                elapsedTimeInMilliseconds / 86400000
-            );
-            console.log(`Posted ${elapsedDays} days ago`);
+            const elapsedTime = Math.floor(elapsedTimeInMilliseconds / day);
+            elapsedTimeLine = `Posted ${elapsedTime} days ago`;
+            console.log(elapsedTimeLine);
         }
 
         articlesHTML += `
         <hr class='article-divider'>
         <div class='article'>
-        <p class='article-date'>${article.date.toUTCString()}</p>
+        <p class='article-date'>${elapsedTimeLine}</p>
         <p class='article-title'>${article.title}</p>
         <p class='article-body'>${article.body}</p>
         <p class='article-source'>Source: ${article.source}</p>
