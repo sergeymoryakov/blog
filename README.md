@@ -1,17 +1,23 @@
-# blog
+# a simple blog application
 
-A simple blog application
 This application allows users to enter their blogs/articles by posting them online.
 
-Technologies Used
-HTML
-CSS
-JavaScript
+## Technologies Used:
+
+<ul>
+<li>HTML</li>
+<li>CSS</li>
+<li>JavaScript</li>
+</ul>
+
+## Features:
 
 Add New Posts: Users can add new posts.
 
-Contributing
-Tou are velcome to contribute.
+## Contributing
 
-License
+You are welcome to contribute.
+
+## License
+
 No
