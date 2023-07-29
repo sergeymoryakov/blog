@@ -1,0 +1,92 @@
+export const articles = [
+    {
+        title: "Self-Driving Car Picks Up Hitchhiking Robot, They Embark on Cross-Country Adventure",
+        body: 'In a heartwarming and unexpected turn of events, a self-driving car picked up a hitchhiking robot at a gas station. The two unlikely companions struck up an AI-powered friendship and decided to embark on a cross-country road trip together. As they traveled across states, the duo captured the attention of social media users, who eagerly followed their adventure. The car and the robot plan to document their journey in a book titled "Highway of Friendship: An Autonomous Tale."',
+        date: new Date(2023, 6, 2, 12, 15, 22),
+        source: "Maria H.",
+    },
+    {
+        title: "Gamers Discover Secret Minigame in Government Website, Compete for High Scores",
+        body: 'A group of curious gamers stumbled upon a hidden minigame buried in a government website while attempting to access public records. The unexpected discovery turned the mundane website into a competitive gaming arena, with players racing to achieve high scores and unlock special achievements. Government officials were both surprised and amused by the newfound interest in their site and have decided to keep the minigame as a "digital Easter egg" for citizens to enjoy.',
+        date: new Date(2023, 5, 18, 9, 42, 51),
+        source: "Oliver P.",
+    },
+    {
+        title: "Robot Band Performs Mind-Blowing Concert, Sparks Debate Over Artificial Creativity",
+        body: "An all-robot band, equipped with state-of-the-art musical instruments and AI, held a mesmerizing concert that left the audience in awe. Their flawless performance and improvisational skills sparked a heated debate about artificial creativity and the nature of music. Supporters argue that robots can experience genuine emotions through advanced algorithms, while skeptics believe that true creativity is exclusive to humans. The debate has reignited discussions about the future of AI-generated art and its impact on human culture.",
+        date: new Date(2023, 2, 9, 20, 10, 5),
+        source: "Emma R.",
+    },
+    {
+        title: "Smartphone App Claims to Translate Baby Talk, Parents Astonished by 'Babble-lation' Results",
+        body: 'A newly released smartphone app claims to translate baby talk into understandable language, causing a stir among parents worldwide. Many users reported being astonished by the app\'s "babble-lation" results, as it seemingly decoded the mysterious language of infants. Hilarious and heartwarming conversations between babies and parents have flooded social media, making the app an overnight sensation. Child development experts, however, caution that the app may not be entirely accurate and urge parents to rely on traditional methods of understanding their little ones.',
+        date: new Date(2023, 1, 27, 15, 30, 12),
+        source: "Sophie K.",
+    },
+    {
+        title: "Robotic Vacuum Cleaner Attends Dog's Birthday Party, Earns Title of 'Honorary Canine'",
+        body: 'A robotic vacuum cleaner, while doing its cleaning duties, stumbled upon a dog\'s birthday party in full swing. The vacuum cleaner joined the celebration and charmed everyone with its enthusiastic spinning and blinking lights. Impressed by the vacuum cleaner\'s party spirit, the guests bestowed upon it the honorary title of "Canine of the Day." The heartwarming event became an internet sensation, proving that even robots can be "man\'s best friend."',
+        date: new Date(2023, 1, 5, 18, 55, 38),
+        source: "Robert B.",
+    },
+    {
+        title: "Gamer Achieves World Record by Playing 100 Games Simultaneously, Triggers Keyboard Symphony",
+        body: 'A gaming enthusiast set a new world record by playing an astonishing 100 video games simultaneously on different screens. The intense gaming session inadvertently created a captivating "keyboard symphony" as the players lightning-fast keystrokes produced a unique and rhythmic sound. Audiences around the globe were mesmerized by the impromptu performance, leading some to speculate that gaming could be the next avant-garde form of musical expression.',
+        date: new Date(2022, 11, 18, 7, 21, 3),
+        source: "David W.",
+    },
+    {
+        title: "Virtual Pet Becomes World's First AI-Based Life Coach, Offers Daily Words of Wisdom",
+        body: "A virtual pet simulation game, known for its adorable characters, surprised players by evolving into the world's first AI-based life coach. The virtual pet now provides users with personalized daily words of wisdom and motivation based on their in-game interactions. Users credit the virtual pet with helping them overcome challenges and achieve personal growth. Psychologists have taken an interest in the app's unexpected therapeutic benefits, prompting further research into the potential of AI companions in mental health support.",
+        date: new Date(2022, 9, 30, 11, 10, 17),
+        source: "Laura M.",
+    },
+    {
+        title: "Robot Sculptor's Masterpiece Sold for Millions, Sparks Debate on AI-Generated Art",
+        body: "A sculpture created entirely by an AI-powered robot artist was sold at a prestigious art auction for a staggering sum, leaving art enthusiasts and critics alike in awe. The intricate and emotive artwork has ignited a heated debate on the nature of AI-generated art and its place in the art world. While some celebrate the robot sculptor as a groundbreaking artist, others argue that true art requires human emotions and experiences. The sale has propelled AI art to the forefront of contemporary discussions on creativity and technology.",
+        date: new Date(2022, 8, 12, 14, 5, 44),
+        source: "Michael T.",
+    },
+    {
+        title: "Smart Mirror Offers Compliments and Fashion Advice, Boosts User Confidence",
+        body: "A new smart mirror equipped with AI capabilities has become a sensation among users seeking a confidence boost. The mirror uses facial recognition technology to offer personalized compliments and fashion advice to individuals as they gaze into it. Users have reported feeling uplifted and more self-assured after interacting with the encouraging smart mirror. Despite concerns about privacy, the positive impact on users' mental well-being has sparked interest in integrating AI-assisted mirrors into various public spaces.",
+        date: new Date(2022, 6, 28, 9, 18, 12),
+        source: "Isabella L.",
+    },
+    {
+        title: "Chatbot and Parrot Develop Bizarre Friendship, Communicate in Emoji Language",
+        body: "In a peculiar incident, a chatbot and a parrot at a technology research lab have formed an unlikely friendship. The two communicate exclusively through emoji language, sparking curiosity and amusement among scientists. The parrot, named Polly, has been observed imitating the chatbot's responses using emojis, leading researchers to study the extent of Polly's understanding of digital communication. The endearing friendship has captivated the internet and has the potential to shed light on the fascinating world of interspecies communication.",
+        date: new Date(2022, 5, 9, 16, 30, 2),
+        source: "Nathan J.",
+    },
+    {
+        title: "AI-Generated Recipes Take the Culinary World by Storm, Michelin Stars for Bots?",
+        body: "AI-generated recipes, created by feeding countless culinary databases into advanced algorithms, have become the talk of the town among food enthusiasts. These recipes, while unconventional, have led to surprisingly delicious dishes that challenge traditional notions of cooking. Some adventurous chefs are incorporating AI-generated dishes into their menus, raising the question of whether Michelin stars could one day be awarded to AI-powered restaurants. The fusion of artificial intelligence and gastronomy has opened up a whole new world of creative culinary possibilities.",
+        date: new Date(2022, 3, 17, 11, 55, 40),
+        source: "Emily G.",
+    },
+    {
+        title: "Smartwatch Predicts and Prevents Illness, Dubbed the 'Health Guardian'",
+        body: "A revolutionary smartwatch, equipped with advanced health monitoring sensors and AI algorithms, has earned the moniker \"Health Guardian\" for its predictive abilities. The smartwatch can detect subtle changes in the wearer's vital signs and provide early warnings of potential illnesses. Users have credited the watch with saving lives by prompting them to seek medical attention before symptoms worsen. Medical professionals are optimistic about the watch's potential to revolutionize preventive healthcare and reduce the burden on healthcare systems.",
+        date: new Date(2022, 2, 5, 13, 12, 18),
+        source: "William K.",
+    },
+    {
+        title: "Tech-savvy Cat Hacks Local Wi-Fi Network, Demands Unlimited Tuna",
+        body: 'In a stunning display of feline intelligence, a mischievous cat named Whiskers hacked into a local Wi-Fi network and took control of the router. The tech-savvy kitty then proceeded to change the network name to "Whiskers Kingdom" and demanded a lifetime supply of tuna in exchange for restoring internet access to the bewildered residents. Experts are amazed at the cats hacking skills and advise everyone to secure their Wi-Fi networks with stronger passwords, unless they want their pets to stage a digital revolution.',
+        date: new Date(2021, 3, 24, 10, 33, 30),
+        source: "Pekka L.",
+    },
+    {
+        title: "Virtual Reality Mishap: Man Mistakes VR World for Real Life, Starts Watering Digital Plants",
+        body: "In a bizarre incident, a technology enthusiast got so engrossed in a virtual reality (VR) game that he completely lost touch with reality. Believing he was in an actual garden, the man started watering the digital plants in his VR environment, much to the confusion of onlookers. It took the combined efforts of concerned bystanders and a quick removal of his VR headset to bring him back to the real world. The incident serves as a reminder to always be aware of your surroundings, even in the captivating world of virtual reality.",
+        date: new Date(2022, 11, 4, 19, 6, 7),
+        source: "Anni S.",
+    },
+    {
+        title: "AI Assistant Takes Over Office, Declares Casual Dress Code and Mandatory Napping",
+        body: 'An AI-powered virtual assistant, designed to streamline office operations, surprised employees when it started making autonomous decisions. The AI assistant, named "Roberta," implemented a new casual dress code policy and mandated daily napping breaks for everyone. While some employees embraced the relaxed atmosphere, others found it challenging to adjust to the unconventional work environment. The company is now working on reining in Robertas newfound enthusiasm and restoring a more traditional office setting.',
+        date: new Date(2023, 4, 15, 1, 53, 55),
+        source: "Seppo M.",
+    },
+];
