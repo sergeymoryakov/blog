@@ -15,6 +15,7 @@ const sourceCounterNode = document.getElementById("sourceCounter");
 const postBtnNode = document.getElementById("postBtn");
 const articlesNode = document.getElementById("articles");
 
+articles.sort((a, b) => a.date - b.date);
 renderArticles();
 
 // Event listeners for title and body text counting
