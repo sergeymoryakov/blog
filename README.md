@@ -1,6 +1,6 @@
 # a simple blog application
 
-This application allows users to enter their blogs/articles by posting them online.
+This application allows users to enter their blogs/articles and post them online.
 
 ## Technologies Used:
 
